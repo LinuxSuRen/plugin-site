@@ -10,6 +10,10 @@ import Views from './Views';
 import { actions } from '../actions';
 import { isFiltered, showFilter, showResults, view } from '../selectors';
 import { createSelector } from 'reselect';
+import zh from 'react-intl/locale-data/zh';
+//import zh_CN from 'zh.js';
+
+addLocaleData([...en, ...zh]);
 
 class Main extends React.PureComponent {
 
